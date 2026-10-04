@@ -1,6 +1,12 @@
 [project]
 name = "domain-contract-0910031-015"
-version = "0.1.0"
-description = "讲解员成长等级的领域约定与校验工具"
+version = "0.2.0"
+description = "讲解员成长等级：规则版本化、积分复式台账、等级保护与权益审计后端"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+growth-ladder-api = "growth_ladder.api:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
